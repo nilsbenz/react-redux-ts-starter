@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -12,10 +10,23 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+### `npm run lint`
+
+Runs eslint over the `src` directory.
+
+### `npm run lint:fix`
+
+Runs eslint over the `src` directory and to try to fix as many issues as possible.
+
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
+Launches the test runner in the interactive watch mode.
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run test:coverage`
+
+Launches the test runner with code coverage
 
 ### `npm run build`
 
@@ -41,5 +52,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deep dive into React, check out the [React documentation](https://reactjs.org/).
+Deep dive into Redux, check out the [Redux documentation](https://redux.js.org/).
+Deep dive into Redux Saga, check out the [Redux Saga documentation](https://redux-saga.js.org/).
+Deep dive into TypeScript, check out the [TypeScript documentation](https://www.typescriptlang.org/).
 
