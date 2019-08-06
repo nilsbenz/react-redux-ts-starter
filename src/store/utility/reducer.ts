@@ -1,12 +1,11 @@
-import { Reducer, AnyAction } from 'redux';
+import { Action, AnyAction, Reducer } from 'redux';
 
-interface Handler<S> { [k: string]: HandlerFunction<S> }
-type HandlerFunction<S> = (s: S, a: AnyAction) => S
+interface ReducerObject { [actionKey: string]: Reducer }
 
-export function createReducer<S, A extends AnyAction>(initialState: S, handlers: Handler<S>): Reducer<S, A> {
+export function createReducer<S, A extends Action = AnyAction>(initialState: S, reducerObject: ReducerObject): Reducer<S, A> {
   return (state = initialState, action): S => {
-    if (Object.prototype.hasOwnProperty.call(handlers, action.type)) {
-      return handlers[action.type](state, action);
+    if (Object.prototype.hasOwnProperty.call(reducerObject, action.type)) {
+      return reducerObject[action.type](state, action);
     }
     return state;
   };
