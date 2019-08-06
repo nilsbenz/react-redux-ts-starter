@@ -34,6 +34,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./",
     "lint:fix": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./ --fix"
@@ -60,10 +61,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 33,
-        "functions": 76,
-        "lines": 76,
-        "statements": 76
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
       }
     }
   }
